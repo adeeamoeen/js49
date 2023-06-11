@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="42.css">
+</head>
+
+<body>
+    <div id="form-container">
+        <h2>Signup Form</h2>
+        <form id="signup-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div id="submitted-data">
+        <h2>Submitted Data:</h2>
+        <p id="name-display"></p>
+        <p id="email-display"></p>
+        <p id="password-display"></p>
+    </div>
+
+
+    <div id="item-details">
+        <h2>Item Details</h2>
+        <p><strong>Item Name:</strong> Smartphone</p>
+        <p><strong>Manufacturer:</strong> Samsung Galaxy A23</p>
+        <p><strong>Price:</strong> 45000 Rs</p>
+        <div id="full-details">
+            <p><strong>Color:</strong> green</p>
+            <p><strong>Screen Size:</strong> 6.5 inches</p>
+            <p><strong>RAM:</strong> 8 GB</p>
+            <p><strong>Storage:</strong> 128 GB</p>
+        </div>
+        <p id="read-more" onclick="toggleDetails()">Read more</p>
+    </div>
+
+    <div id="student-form">
+        <h2>Student Details Form</h2>
+        <form id="details-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" required><br><br>
+
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" required><br><br>
+
+            <input type="submit" value="Add Student">
+        </form>
+    </div>
+
+    <table id="student-table">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Action</th>
+        </tr>
+    </table>
+
+    <div id="edit-form-container" class="hidden-form">
+        <h2>Edit Student Details</h2>
+        <form id="edit-form">
+            <input type="hidden" id="edit-row-index">
+            <label for="edit-name">Name:</label>
+            <input type="text" id="edit-name" required><br><br>
+
+            <label for="edit-age">Age:</label>
+            <input type="number" id="edit-age" required><br><br>
+
+            <label for="edit-grade">Grade:</label>
+            <input type="text" id="edit-grade" required><br><br>
+
+            <input type="submit" value="Save Changes">
+            <button type="button" onclick="cancelEdit()">Cancel</button>
+        </form>
+    </div>
+
+
+
+</div>
+<div id="image-container"></div>
+
+  <div id="modal" class="modal modal-close">
+    <img id="modal-image" src="" alt="Modal Image">
+    <button onclick="onClosedImagModal()">modal close</button>
+  </div>
+
+
+    <p id="zoom-paragraph">Saylani Welfare International Trust is a non-government organization focusing primarily on
+        feeding the poor and homeless. It was established in May 1999 and is headquartered at Bahdurabad, Karachi,
+        Pakistan. It was founded and headed by spiritual and religious scholar Maulana Bashir Farooq Qadri..</p>
+
+    <button onclick="zoomIn()">Zoom In (+)</button>
+    <button onclick="zoomOut()">Zoom Out (-)</button>
+
+
+    <script src="43.js"></script>
+</body>
+
+</html>

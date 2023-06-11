@@ -1,0 +1,98 @@
+
+#item-details {
+    margin: 20px;
+    padding: 20px;
+    border: 4px solid #240333;
+    width: 300px;
+}
+
+#full-details {
+    display: none; 
+    margin-top: 10px;
+}
+
+#read-more {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+strong{
+    color:darkslateblue;
+}
+#form-container {
+    margin: 20px;
+    padding: 20px;
+    border: 4px solid #014c4e;
+    width: 300px;
+}
+label{
+    color: darkcyan;
+}
+#student-form {
+    margin: 20px;
+    padding: 20px;
+    border: 4px solid #ce872b;
+    width: 400px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 2px solid #a5ca7b;
+    padding: 8px;
+}
+
+.delete-button, .edit-button {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+.hidden-form {
+    display: none;
+}
+
+/* The Modal (background) */
+
+    
+  
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+      
+      .modal-close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .modal-close:hover,
+  .modal-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;}
+    .modal-open{
+        display: block;
+        height: 100%;
+        width: 100%;
+        
+    }
+   #modal-image{
+width: 60%;
+height: 60%;
+align-items: center;}
